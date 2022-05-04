@@ -25,17 +25,17 @@ export default function Navbar({ toggle }) {
 
           <Navmenu>
             <Navitem>
-              <Navlink to="/">About</Navlink>
+              <Navlink to="About">About</Navlink>
             </Navitem>
             <Navitem>
-              <Navlink to="/">About</Navlink>
+              <Navlink to="B">About</Navlink>
             </Navitem>
             <Navitem>
-              <Navlink to="/">About</Navlink>
+              <Navlink to="C">About</Navlink>
             </Navitem>
           </Navmenu>
           <Navbutton>
-            <Navbuttonlink to="/">About</Navbuttonlink>
+            <Navbuttonlink to="/signin">About</Navbuttonlink>
           </Navbutton>
         </Navbarcontainer>
       </Nav>

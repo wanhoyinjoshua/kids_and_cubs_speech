@@ -19,18 +19,7 @@ const Home = () => {
     setIsOpen(!isOpen);
   };
 
-  return (
-    <>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
-
-      <Navbar toggle={toggle} />
-      <HeroSection />
-      <Table></Table>
-      <InfoSection {...homeObjOne} />
-      <InfoSection {...homeObjtwo} />
-      <InfoSection {...homeObjthree} />
-    </>
-  );
+  return <>This is new page</>;
 };
 
 export default Home;
