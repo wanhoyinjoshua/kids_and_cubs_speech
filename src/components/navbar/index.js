@@ -13,16 +13,14 @@ import {
 import { FaBars } from "react-icons/fa";
 import logo from "./pic.svg";
 
-export default function Navbar() {
+export default function Navbar({ toggle }) {
   return (
     <>
       <Nav>
         <Navbarcontainer>
-          <NavLogo to="/">
-            <img src={logo} alt="hi" width="200" height="auto" />
-          </NavLogo>
+          <NavLogo to="/">Kids and cubs clinic</NavLogo>
 
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
 
