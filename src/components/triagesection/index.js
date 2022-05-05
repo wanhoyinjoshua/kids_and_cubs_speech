@@ -18,17 +18,38 @@ const Table = () => {
         <Elementcard>
           <ServicesIcon src="/assets/images/image.svg"></ServicesIcon>
           <ServicesH2>help you speak</ServicesH2>
-          <ServicesP>speak again bitch</ServicesP>
+          <ServicesP>
+            mply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the
+            1500s, when an u
+          </ServicesP>
         </Elementcard>
         <Elementcard>
           <ServicesIcon src="/assets/images/image.svg"></ServicesIcon>
           <ServicesH2>help you speak</ServicesH2>
-          <ServicesP>speak again bitch</ServicesP>
+          <ServicesP>
+            mply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the
+            1500s, when an u
+          </ServicesP>
         </Elementcard>
         <Elementcard>
           <ServicesIcon src="/assets/images/image.svg"></ServicesIcon>
           <ServicesH2>help you speak</ServicesH2>
-          <ServicesP>speak again bitch</ServicesP>
+          <ServicesP>
+            mply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the
+            1500s, when an u
+          </ServicesP>
+        </Elementcard>
+        <Elementcard>
+          <ServicesIcon src="/assets/images/image.svg"></ServicesIcon>
+          <ServicesH2></ServicesH2>
+          <ServicesP>
+            mply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the
+            1500s, when an u
+          </ServicesP>
         </Elementcard>
       </ElementWrapper>
     </TableContainer>

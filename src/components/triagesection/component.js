@@ -30,8 +30,9 @@ export const ElementWrapper = styled.div`
     grid-template-columns: 1fr 1fr;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 500px) {
     grid-template-columns: 1fr;
+    width: 95%;
   }
 `;
 

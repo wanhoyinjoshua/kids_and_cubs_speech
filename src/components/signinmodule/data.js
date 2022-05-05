@@ -5,8 +5,8 @@ export const homeObjOne = {
   lightText: true,
   darkText: false,
   Lighttextdescrp: true,
-  topline: "Speech Pathology Service",
-  headline: "NDIS Provider",
+  topline: "This is the sconed end point",
+  headline: "second endpoint!",
   description:
     "Come play e ay with us and we ahve very good therapist and joshua is hereCome play with us and we ahve very good therapist and joshua is here Come play with us and we ahve very good therapist and joshua is here",
   imgStart: false,
@@ -29,7 +29,7 @@ export const homeObjtwo = {
   description:
     "Come play e ay with us and we ahve very good therapist and joshua is hereCome play with us and we ahve very good therapist and joshua is here Come play with us and we ahve very good therapist and joshua is here",
   imgStart: true,
-  img: "/assets/images/undraw_fans_re_cri3.svg",
+  img: "/assets/images/image.svg",
   alt: "car",
   dark: false,
   primary: false,
@@ -49,7 +49,7 @@ export const homeObjthree = {
   description:
     "Come play e ay with us and we ahve very good therapist and joshua is hereCome play with us and we ahve very good therapist and joshua is here Come play with us and we ahve very good therapist and joshua is here",
   imgStart: false,
-  img: "/assets/images/undraw_calling_re_mgft.svg",
+  img: "/assets/images/image.svg",
   alt: "car",
   dark: false,
   primary: true,

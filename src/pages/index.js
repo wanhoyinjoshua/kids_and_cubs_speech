@@ -7,6 +7,7 @@ import HeroSection from "../components/HeroSection";
 
 import InfoSection from "../components/infosection";
 import Table from "../components/triagesection";
+import Footer from "../components/footer";
 import {
   homeObjOne,
   homeObjtwo,
@@ -29,6 +30,7 @@ const Home = () => {
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjtwo} />
       <InfoSection {...homeObjthree} />
+      <Footer></Footer>
     </>
   );
 };

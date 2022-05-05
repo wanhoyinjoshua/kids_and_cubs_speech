@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { animateScroll as scroll } from "react-scroll";
+
 import {
   Nav,
   Navbarcontainer,
@@ -12,12 +14,29 @@ import {
 } from "./navbarelement";
 import { FaBars } from "react-icons/fa";
 
-export default function Navbar({ toggle }) {
+const Navbar = ({ toggle }) => {
+  const [scrollNav, setScrollNav] = useState(false);
+
+  const changeNav = () => {
+    if (window.scrollY >= 80) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+
+  const toggletop = () => {
+    scroll.scrollToTop();
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNav);
+  });
   return (
     <>
-      <Nav>
+      <Nav scrollNav={scrollNav}>
         <Navbarcontainer>
-          <NavLogo to="/">Kids and cubs clinic</NavLogo>
+          <NavLogo onClick={toggletop} src="/assets/images/bear3.svg"></NavLogo>
 
           <MobileIcon onClick={toggle}>
             <FaBars />
@@ -25,13 +44,40 @@ export default function Navbar({ toggle }) {
 
           <Navmenu>
             <Navitem>
-              <Navlink to="About">About</Navlink>
+              <Navlink
+                to="About"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={80}
+              >
+                First Section
+              </Navlink>
             </Navitem>
             <Navitem>
-              <Navlink to="B">About</Navlink>
+              <Navlink
+                to="B"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={80}
+              >
+                Second Section
+              </Navlink>
             </Navitem>
             <Navitem>
-              <Navlink to="C">About</Navlink>
+              <Navlink
+                to="C"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={80}
+              >
+                Third Section
+              </Navlink>
             </Navitem>
           </Navmenu>
           <Navbutton>
@@ -41,4 +87,6 @@ export default function Navbar({ toggle }) {
       </Nav>
     </>
   );
-}
+};
+
+export default Navbar;
