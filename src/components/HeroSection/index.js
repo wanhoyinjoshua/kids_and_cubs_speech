@@ -20,8 +20,8 @@ const HeroSection = () => {
       <HeroContainer>
         <HeroContent>
           <Herobg></Herobg>
-          <Heroh1>Kids and cubs clinic</Heroh1>
-          <Herop>NDIS registered Provider</Herop>
+          <Heroh1>Kids and cubs </Heroh1>
+          <Herop>Speech Pathology Clinic</Herop>
           <Herobtnwrapper>
             <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}>
               Get started{hover ? <ArrowForward /> : <ArrowRight />}
