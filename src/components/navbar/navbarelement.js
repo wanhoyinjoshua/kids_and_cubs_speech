@@ -4,6 +4,7 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
+  transition: all 0.2s ease-in-out;
   background: ${({ scrollNav }) => (scrollNav ? "black" : "transparent")};
   height: 80px;
   margin-top: -80px;
@@ -16,7 +17,7 @@ export const Nav = styled.nav`
   z-index: 10;
 
   @media screen and (max-width: 960px) {
-    transition: 0.8 all ease;
+    transition: all 0.2s ease-in-out;
   }
 `;
 export const Navbarcontainer = styled.div`
@@ -28,11 +29,19 @@ export const Navbarcontainer = styled.div`
   padding: 0 24px;
   max-width: 1100px;
 `;
+export const Logotextcontainer = styled.div`
+  width: auto;
+  justify-self: flex-start;
+  cursor: pointer;
+  font-size: 1.5 rem;
+  display: flex;
+  align-items: center;
+`;
 
 export const NavLogo = styled.img`
   color: red;
 
-  width: auto;
+  width: 100px;
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5 rem;
@@ -87,7 +96,6 @@ export const Navlink = styled(LinkS)`
   &.active {
     border-bottom: 5px solid #01bf71;
     color: white;
-    
   }
 `;
 export const Navbutton = styled.nav`
@@ -99,13 +107,11 @@ export const Navbutton = styled.nav`
   }
 `;
 
-export const Navbuttonlink = styled(LinkR)`
-  border-radius: 50px;
-  
-
-  
+export const Navbuttonlink = styled(LinkS)`
   white-space: nowrap;
-  padding: 10px 22px;
+  position: absolute;
+  bottom: 20px;
+
   text-decoration: none;
   color: white;
   font-size: 16px;
@@ -114,6 +120,7 @@ export const Navbuttonlink = styled(LinkR)`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   :hover {
+    border-radius: 50px;
     transition: all 0.2s ease-in-out;
     background: #fff;
     color: orange;

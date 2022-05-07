@@ -10,7 +10,8 @@ import {
   Navitem,
   Navlink,
   Navbutton,
-  Navbuttonlink
+  Navbuttonlink,
+  Logotextcontainer
 } from "./navbarelement";
 import { FaBars } from "react-icons/fa";
 
@@ -36,17 +37,21 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav scrollNav={scrollNav}>
         <Navbarcontainer>
-          <NavLogo onClick={toggletop} src="/assets/images/bear3.svg"></NavLogo>
-           <Navbutton>
-            <Navbuttonlink to="/signin">Kids and cubs clinci</Navbuttonlink>
-          </Navbutton>
+          <Logotextcontainer>
+            <NavLogo
+              onClick={toggletop}
+              src="/assets/images/bear3.svg"
+            ></NavLogo>
+            <Navbutton>
+              <Navbuttonlink to="/signin">Kids and cubs clinci</Navbuttonlink>
+            </Navbutton>
+          </Logotextcontainer>
 
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
 
           <Navmenu>
-          
             <Navitem>
               <Navlink
                 to="About"
@@ -84,7 +89,6 @@ const Navbar = ({ toggle }) => {
               </Navlink>
             </Navitem>
           </Navmenu>
-         
         </Navbarcontainer>
       </Nav>
     </>
