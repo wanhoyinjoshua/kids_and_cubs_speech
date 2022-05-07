@@ -51,13 +51,16 @@ const Footer = () => {
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
-        <SocialMedia>
-          <SocialMediawrap>
-            <SocialLogo></SocialLogo>
-            <WebsiteRights>
-              Kids and Cubs ©{new Date().getFullYear()} All rights reserved.
+         <WebsiteRights>
+              Kids and Cubs Clinic ©{new Date().getFullYear()} All rights reserved.
             </WebsiteRights>
-            <SocialIcons>
+        {/* <SocialMedia>
+          <SocialMediawrap>
+            <SocialLogo></SocialLogo> */}
+            {/* <WebsiteRights>
+              Kids and Cubs Clinic ©{new Date().getFullYear()} All rights reserved.
+            </WebsiteRights> */}
+            {/* <SocialIcons>
               <SocialIconLink
                 href="//www.facebook.com"
                 target="_blank"
@@ -80,9 +83,9 @@ const Footer = () => {
               >
                 <FaYoutube />
               </SocialIconLink>
-            </SocialIcons>
-          </SocialMediawrap>
-        </SocialMedia>
+            </SocialIcons> */}
+          {/* </SocialMediawrap>
+        </SocialMedia> */}
       </FooterWrap>
     </FooterContainer>
   );

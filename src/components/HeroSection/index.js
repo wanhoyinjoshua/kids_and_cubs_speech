@@ -20,11 +20,11 @@ const HeroSection = () => {
       <HeroContainer>
         <HeroContent>
           <Herobg></Herobg>
-          <Heroh1>Kids and cubs </Heroh1>
-          <Herop>Speech Pathology Clinic</Herop>
+          <Heroh1>Kids and cubs Clinic </Heroh1>
+          <Herop>Speech Pathology</Herop>
           <Herobtnwrapper>
             <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}>
-              Get started{hover ? <ArrowForward /> : <ArrowRight />}
+              Contact us{hover ? <ArrowForward /> : <ArrowRight />}
             </Button>
           </Herobtnwrapper>
         </HeroContent>

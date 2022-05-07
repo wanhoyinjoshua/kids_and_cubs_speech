@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 export const HeroContainer = styled.div`
-  background-image: url("/assets/images/shutterstock/Black and Blue Modern Action Gaming Livestream Twitch Screen.svg");
+  background-image: url("/assets/images/shutterstock/Black and Blue Modern Action Gaming Livestream Twitch Screen (1).svg");
   display: flex;
   background-position: 20% 60%;
   justify-content: center;
