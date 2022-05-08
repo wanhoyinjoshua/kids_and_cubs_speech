@@ -15,6 +15,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
+  font-family: "Water Brush", cursive;
 
   @media screen and (max-width: 960px) {
     transition: all 0.2s ease-in-out;
@@ -50,6 +51,10 @@ export const NavLogo = styled.img`
   margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
+  @media screen and (max-width: 760px) {
+    margin-left: 1px;
+    width: 80px;
+  }
 `;
 
 export const MobileIcon = styled.div`
@@ -103,7 +108,7 @@ export const Navbutton = styled.nav`
   align-items: center;
 
   @media screen and (max-width: 760px) {
-    display: none;
+    font-size: 8px;
   }
 `;
 
@@ -111,6 +116,8 @@ export const Navbuttonlink = styled(LinkS)`
   white-space: nowrap;
   position: absolute;
   bottom: 20px;
+  font-family: "Water Brush", cursive;
+  font-weight: bold;
 
   text-decoration: none;
   color: white;
@@ -124,5 +131,8 @@ export const Navbuttonlink = styled(LinkS)`
     transition: all 0.2s ease-in-out;
     background: #fff;
     color: orange;
+  }
+  @media screen and (max-width: 760px) {
+    font-size: 15px;
   }
 `;

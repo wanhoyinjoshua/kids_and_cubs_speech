@@ -43,7 +43,7 @@ const Navbar = ({ toggle }) => {
               src="/assets/images/bear3.svg"
             ></NavLogo>
             <Navbutton>
-              <Navbuttonlink to="/signin">Kids and cubs clinci</Navbuttonlink>
+              <Navbuttonlink to="/signin">Kids and cubs clinic</Navbuttonlink>
             </Navbutton>
           </Logotextcontainer>
 
