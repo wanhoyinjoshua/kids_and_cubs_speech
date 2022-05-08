@@ -5,3 +5,14 @@
   font-family: "Water Brush", cursive;
   scroll-behaviour: smooth;
 }
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Ourservices {
+  margin: 50px;
+}

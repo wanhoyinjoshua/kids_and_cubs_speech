@@ -23,7 +23,12 @@ const HeroSection = () => {
           <Heroh1>Kids and cubs Clinic </Heroh1>
           <Herop>Speech Pathology</Herop>
           <Herobtnwrapper>
-            <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}>
+            <Button
+              href="https://docs.google.com/forms/d/e/1FAIpQLSd9zM3Zj9q3mdsxXpxO05aG75hRqVVFh9qoSIhwoNujqD29NQ/viewform"
+              target="_blank"
+              onMouseEnter={onHover}
+              onMouseLeave={onHover}
+            >
               Contact us{hover ? <ArrowForward /> : <ArrowRight />}
             </Button>
           </Herobtnwrapper>

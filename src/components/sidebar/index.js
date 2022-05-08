@@ -6,7 +6,8 @@ import {
   SidebarWrapper,
   Sidebarmenu,
   Sidebarlink,
-  
+  Sidebtnwrap,
+  Sidebtnroute
 } from "./sidebarcomponents";
 
 const Sidebar = ({ isOpen, toggle }) => {
@@ -28,9 +29,14 @@ const Sidebar = ({ isOpen, toggle }) => {
           </Sidebarlink>
         </Sidebarmenu>
 
-        {/* <Sidebtnwrap>
-          <Sidebtnroute to="/about">sign in</Sidebtnroute>
-        </Sidebtnwrap> */}
+        <Sidebtnwrap>
+          <Sidebtnroute
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd9zM3Zj9q3mdsxXpxO05aG75hRqVVFh9qoSIhwoNujqD29NQ/viewform"
+            target="blank"
+          >
+            Contact us now!
+          </Sidebtnroute>
+        </Sidebtnwrap>
       </SidebarWrapper>
     </SidebarContainer>
   );
