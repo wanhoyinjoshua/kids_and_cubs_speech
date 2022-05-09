@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import "../../App.css";
 
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
@@ -15,7 +16,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
-  font-family: "Water Brush", cursive;
+  font-family: "FontName";
 
   @media screen and (max-width: 960px) {
     transition: all 0.2s ease-in-out;
@@ -116,7 +117,7 @@ export const Navbuttonlink = styled(LinkS)`
   white-space: nowrap;
   position: absolute;
   bottom: 20px;
-  font-family: "Water Brush", cursive;
+
   font-weight: bold;
 
   text-decoration: none;
