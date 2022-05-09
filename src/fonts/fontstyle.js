@@ -7,8 +7,8 @@ export default createGlobalStyle`
         font-family: 'Font Name';
         src: local('FontName'), local('FontName'),
         
-        url(${NameOfYourFontWoff}) format('truetype');
-        font-weight: 300;
-        font-style: normal;
+        url(${NameOfYourFontWoff}) format('typetrue');
+        font-weight: 900;
+        font-style: bold;
     }
 `;

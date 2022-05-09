@@ -14,6 +14,7 @@ import {
   Logotextcontainer
 } from "./navbarelement";
 import { FaBars } from "react-icons/fa";
+import GlobalFonts from "../../fonts/fontstyle";
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -35,6 +36,7 @@ const Navbar = ({ toggle }) => {
   });
   return (
     <>
+      <GlobalFonts />
       <Nav scrollNav={scrollNav}>
         <Navbarcontainer>
           <Logotextcontainer>
