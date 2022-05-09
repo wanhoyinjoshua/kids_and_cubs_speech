@@ -16,7 +16,6 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
-  font-family: "FontName";
 
   @media screen and (max-width: 960px) {
     transition: all 0.2s ease-in-out;
@@ -117,8 +116,6 @@ export const Navbuttonlink = styled(LinkS)`
   white-space: nowrap;
   position: absolute;
   bottom: 20px;
-
-  font-weight: bold;
 
   text-decoration: none;
   color: white;

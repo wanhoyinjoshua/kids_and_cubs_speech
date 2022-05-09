@@ -1,8 +1,0 @@
-@font-face {
-  font-family: "font";
-  src: local("font"), url(./HussarBoldWeb-bf92.woff) format("woff");
-}
-
-* {
-  font-family: font;
-}
