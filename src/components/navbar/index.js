@@ -14,7 +14,7 @@ import {
   Logotextcontainer
 } from "./navbarelement";
 import { FaBars } from "react-icons/fa";
-
+import GlobalStyle from "../../fonts/font";
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
@@ -35,6 +35,7 @@ const Navbar = ({ toggle }) => {
   });
   return (
     <>
+      <GlobalStyle />
       <Nav scrollNav={scrollNav}>
         <Navbarcontainer>
           <Logotextcontainer>
@@ -43,7 +44,9 @@ const Navbar = ({ toggle }) => {
               src="/assets/images/bear3.svg"
             ></NavLogo>
             <Navbutton>
-              <Navbuttonlink to="/signin">KIDS AND CUBS CLINIC</Navbuttonlink>
+              <Navbuttonlink className="logotag" to="/signin">
+                KIDS AND CUBS CLINIC
+              </Navbuttonlink>
             </Navbutton>
           </Logotextcontainer>
 

@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Maison Nueue';
     src: url(${MaisonBook});
   }
-  * {
+  .logotag {
      font-family: 'Maison Nueue';
   }
 `;
