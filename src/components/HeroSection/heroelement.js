@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 export const HeroContainer = styled.div`
-  background-image: url("/assets/images/shutterstock/Black and Blue Modern Action Gaming Livestream Twitch Screen.svg");
   display: flex;
   background-position: 20% 60%;
   justify-content: center;
@@ -11,21 +10,6 @@ export const HeroContainer = styled.div`
   height: 100vh;
   position: relative;
   z-index: 1;
-
-  :before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.2) 0%,
-        rbga(0, 0, 0, 0.6) 100%
-      ),
-      linear-gradient(180deg, rbga(0, 0, 0, 0.2) 0%, transparent) z-index=2;
-  }
 `;
 
 export const HeroContent = styled.div`
@@ -83,4 +67,35 @@ export const ArrowForward = styled(MdArrowForward)`
 export const ArrowRight = styled(MdKeyboardArrowRight)`
   margin-left: 8px;
   font-size: 20px;
+`;
+export const Bubblepic = styled.img`
+  animation: MoveUpDown 2s linear infinite;
+  animation-delay: ${(props) => props.theme.delay};
+  @keyframes MoveUpDown {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+  position: absolute;
+  background-color: ${(props) => props.theme.main};
+  border-radius: 50%;
+  border: none;
+
+  width: ${(props) => props.theme.width};
+  display: ${(props) => props.theme.display};
+  left: ${(props) => props.theme.left};
+  right: ${(props) => props.theme.right};
+  top: ${(props) => props.theme.top};
+  bottom: ${(props) => props.theme.bottom};
+  @media screen and (max-width: 768px) {
+    display: ${(props) => props.theme.displaymob};
+    left: ${(props) => props.theme.leftmob};
+    right: ${(props) => props.theme.rightmob};
+    top: ${(props) => props.theme.topmob};
+    bottom: ${(props) => props.theme.bottommob};
+  }
 `;

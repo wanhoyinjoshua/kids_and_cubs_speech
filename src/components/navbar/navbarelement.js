@@ -6,7 +6,7 @@ import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
   transition: all 0.2s ease-in-out;
-  background: ${({ scrollNav }) => (scrollNav ? "black" : "transparent")};
+  background: ${({ scrollNav }) => (scrollNav ? "#54CDEB" : "transparent")};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -29,6 +29,9 @@ export const Navbarcontainer = styled.div`
   width: 100%;
   padding: 0 24px;
   max-width: 1100px;
+  @media screen and (max-width: 760px) {
+    padding: 0px;
+  }
 `;
 export const Logotextcontainer = styled.div`
   width: auto;
@@ -39,21 +42,23 @@ export const Logotextcontainer = styled.div`
   align-items: center;
 `;
 
-export const NavLogo = styled.img`
-  color: red;
-
+export const NavLogo = styled.div`
+  background-image: ${({ scrollNav }) =>
+    scrollNav ? 'url("/assets/gifs/1.gif")' : 'url("/assets/images/bear.svg")'};
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 100px;
-  justify-self: flex-start;
+  height: 80px;
+
   cursor: pointer;
   font-size: 1.5 rem;
   display: flex;
-  align-items: center;
-  margin-left: 24px;
-  font-weight: bold;
+
   text-decoration: none;
   @media screen and (max-width: 760px) {
     margin-left: 1px;
     width: 80px;
+    height: 80px;
   }
 `;
 
@@ -61,7 +66,7 @@ export const MobileIcon = styled.div`
   display: none;
 
   @media screen and (max-width: 760px) {
-    display: block;
+    display: ${({ scrollNav }) => (scrollNav ? "block" : "none")};
     position: absolute;
     top: 0;
     right: 0;
@@ -85,6 +90,7 @@ export const Navmenu = styled.ul`
 
 export const Navitem = styled.li`
   height: 80px;
+  display: ${({ scrollNav }) => (scrollNav ? "block" : "none")};
 `;
 
 export const Navlink = styled(LinkS)`
@@ -116,6 +122,7 @@ export const Navbuttonlink = styled(LinkS)`
   white-space: nowrap;
   position: absolute;
   bottom: 20px;
+  display: ${({ scrollNav }) => (scrollNav ? "block" : "none")};
 
   text-decoration: none;
   color: white;
@@ -126,6 +133,7 @@ export const Navbuttonlink = styled(LinkS)`
   transition: all 0.2s ease-in-out;
   :hover {
     border-radius: 50px;
+    padding: 10px;
     transition: all 0.2s ease-in-out;
     background: #fff;
     color: orange;

@@ -39,23 +39,21 @@ const Navbar = ({ toggle }) => {
       <Nav scrollNav={scrollNav}>
         <Navbarcontainer>
           <Logotextcontainer>
-            <NavLogo
-              onClick={toggletop}
-              src="/assets/images/bear3.svg"
-            ></NavLogo>
+            <NavLogo scrollNav={scrollNav} onClick={toggletop}></NavLogo>
             <Navbutton>
-              <Navbuttonlink className="logotag" to="/signin">
-                KIDS AND CUBS CLINIC
+              <Navbuttonlink scrollNav={scrollNav} onClick={toggletop}>
+                <div className="logotag">KIDS AND CUBS CLINIC</div>
+                <div className="logosubtag">Speech Pathology clinic</div>
               </Navbuttonlink>
             </Navbutton>
           </Logotextcontainer>
 
-          <MobileIcon onClick={toggle}>
+          <MobileIcon scrollNav={scrollNav} onClick={toggle}>
             <FaBars />
           </MobileIcon>
 
           <Navmenu>
-            <Navitem>
+            <Navitem scrollNav={scrollNav}>
               <Navlink
                 to="About"
                 smooth={true}
@@ -67,7 +65,7 @@ const Navbar = ({ toggle }) => {
                 First Section
               </Navlink>
             </Navitem>
-            <Navitem>
+            <Navitem scrollNav={scrollNav}>
               <Navlink
                 to="B"
                 smooth={true}
@@ -79,7 +77,7 @@ const Navbar = ({ toggle }) => {
                 Second Section
               </Navlink>
             </Navitem>
-            <Navitem>
+            <Navitem scrollNav={scrollNav}>
               <Navlink
                 to="C"
                 smooth={true}

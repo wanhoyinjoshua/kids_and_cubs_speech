@@ -10,7 +10,8 @@ export const homeObjOne = {
   description:
     "Come play e ay with us and we ahve very good therapist and joshua is hereCome play with us and we ahve very good therapist and joshua is here Come play with us and we ahve very good therapist and joshua is here",
   imgStart: false,
-  img: "/assets/images/shutterstock/Black and Blue Modern Action Gaming Livestream Twitch Screen (1).svg",
+  img:
+    "/assets/images/shutterstock/WhatsApp Image 2022-05-07 at 4.44.02 PM.jpeg",
   alt: "car",
   dark: false,
   primary: true,
@@ -29,7 +30,7 @@ export const homeObjtwo = {
   description:
     "Come play e ay with us and we ahve very good therapist and joshua is hereCome play with us and we ahve very good therapist and joshua is here Come play with us and we ahve very good therapist and joshua is here",
   imgStart: true,
-  img: "/assets/images/shutterstock/Black and Blue Modern Action Gaming Livestream Twitch Screen.svg",
+  img: "/assets/images/shutterstock/22.svg",
   alt: "car",
   dark: false,
   primary: false,
@@ -49,7 +50,8 @@ export const homeObjthree = {
   description:
     "Come play e ay with us and we ahve very good therapist and joshua is hereCome play with us and we ahve very good therapist and joshua is here Come play with us and we ahve very good therapist and joshua is here",
   imgStart: false,
-  img: "/assets/images/shutterstock/Black and Blue Modern Action Gaming Livestream Twitch Screen (1).svg",
+  img:
+    "/assets/images/shutterstock/Black and Blue Modern Action Gaming Livestream Twitch Screen (1).svg",
   alt: "car",
   dark: false,
   primary: true,

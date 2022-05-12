@@ -49,7 +49,11 @@ export const Column2 = styled.div`
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
+  padding-left: 100px;
   padding-bottom: 60px;
+  @media screen and (max-width: 768px) {
+    padding-left: 0;
+  }
 `;
 
 export const Topline = styled.p`
@@ -87,7 +91,10 @@ export const BtnWrap = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 100%;
+  width: 80%;
   margin: 0 0 10px 0;
   padding-right: 0;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;

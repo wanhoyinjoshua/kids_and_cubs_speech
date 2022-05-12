@@ -46,7 +46,6 @@ const Home = () => {
         </Accordion>
       </div>
       <InfoSection {...homeObjOne} />
-      <Table></Table>
 
       <InfoSection {...homeObjtwo} />
       <InfoSection {...homeObjthree} />
