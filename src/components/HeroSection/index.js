@@ -23,7 +23,7 @@ const HeroSection = () => {
     <div>
       <GlobalStyle />
       <HeroContainer>
-        <Bubblepic
+        {/* <Bubblepic
           //root
           theme={{
             //stay when mobile
@@ -179,7 +179,7 @@ const HeroSection = () => {
             delay: "0.8s"
           }}
           src="/assets/images/bear3.svg"
-        />
+        /> */}
         <HeroContent>
           <Heroh1 className="homeopagetitle">KIDS AND CUBS CLINIC </Heroh1>
           <Herop>Speech Pathology</Herop>
